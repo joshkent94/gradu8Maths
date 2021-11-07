@@ -8,6 +8,13 @@ header,
   scroll-behavior: smooth;
 }
 
+.background {
+  background-image: url("/src/assets/A_level_maths.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (max-width: 740px) {
   html,
   body,

@@ -1,6 +1,10 @@
 import React from "react";
 import WOW from 'wow.js';
 import $ from 'jquery';
+import logo from './assets/gradu8_maths.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.css';
+import 'animate.css';
 
 export default function App() {
   new WOW().init();
@@ -20,7 +24,7 @@ export default function App() {
           
           <div className="container">
             <a className="navbar-brand" href="/" title="Gradu8 Maths">
-              <img src="/public/images/gradu8_maths.png" alt="Gradu8 Maths | A level maths tutor in Doncaster" style={{ width: "40px" }}/>
+              <img src={logo} alt="Gradu8 Maths | A level maths tutor in Doncaster" style={{ width: "40px" }}/>
             </a>
             <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -29,7 +33,7 @@ export default function App() {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link underline" href="#aboutMe" title="About me">About <span className="sr-only">(current)</span></a>
+                  <a className="nav-link underline" href="#aboutMe" title="About me">About</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link underline" href="#testimonials" title="Testimonials">Testimonials</a>
@@ -52,16 +56,13 @@ export default function App() {
 
         </nav>
 
-        <div className="view wow fadeIn" style={{ backgroundImage: "url('/public/images/A_level_maths.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center center"}}>
+        <div className="view wow fadeIn background">
           <div className="mask rgba-black-light align-items-center">
             <div className="container">
               <div className="row">
                 <div className="col-md-12 mb-4 text-center wow fadeInUp centerTitle">
-
-                    <h1 className=" h1-reponsive text-uppercase font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong>Gradu8 Maths</strong><hr className="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s"/>
-                      <h5 className="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Mathematics Tuition in Doncaster</strong></h5>
-                    </h1>                  
-                
+                    <h1 className=" h1-reponsive text-uppercase font-weight-bold wow fadeInDown" data-wow-delay="0.3s"><strong>Gradu8 Maths</strong><hr className="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s"/></h1>                  
+                    <h5 className="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Mathematics Tuition in Doncaster</strong></h5>
                 </div>
               </div>
             </div>
