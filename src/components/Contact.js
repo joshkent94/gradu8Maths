@@ -33,13 +33,13 @@ export default function Contact() {
             </div>
             <form className="row contact" id="contact-form" onSubmit={handleFormSubmit}>
                 <div className="form-group col-md-6">
-                    <input name="name" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="nameInput" placeholder="Your Name" onChange={handleNameChange}/>
+                    <input name="name" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="nameInput" placeholder="Your Name" onChange={handleNameChange} required/>
                 </div>
                 <div className="form-group col-md-6">
-                    <input name="subject" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="subjectInput" placeholder="Subject" onChange={handleSubjectChange} />
+                    <input name="subject" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="subjectInput" placeholder="Subject" onChange={handleSubjectChange} required/>
                 </div>
                 <div className="form-group col-md-12">
-                    <textarea name="message" type="message" className="form-control messageForm wow fadeInDown" data-wow-delay="0.3s" id="messageInput" placeholder="Your Message" onChange={handleMessageChange}></textarea>
+                    <textarea name="message" type="message" className="form-control messageForm wow fadeInDown" data-wow-delay="0.3s" id="messageInput" placeholder="Your Message" onChange={handleMessageChange} required></textarea>
                 </div>
                 <div className="col-md-12 text-center">
                     <button type="submit" className="btn contactBtn my-5 wow fadeInUp" data-wow-delay="0.4s">Get in touch</button>
