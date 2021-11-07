@@ -2,6 +2,7 @@ import React from "react";
 import WOW from 'wow.js';
 import $ from 'jquery';
 import logo from './assets/gradu8_maths.png';
+import sine_wave from './assets/sine_wave.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import 'animate.css';
@@ -71,7 +72,7 @@ export default function App() {
 
       </header>
 
-      {/* <main> 
+      <main> 
           <div className="container-fluid padding">
             
             <div className="row p-5" id="aboutMe">
@@ -204,10 +205,10 @@ export default function App() {
             </div>
 
             <div className="col-md-12 text-center spacer" id="services">
-              <a href="https://www.facebook.com/pg/Gradu8maths/reviews/?ref=page_internal" target="_blank" title="Link to facebook review page" className="btn reviewBtn wow fadeInUp" data-wow-delay="0.4s">Write a Review</a>
+              <a href="https://www.facebook.com/pg/Gradu8maths/reviews/?ref=page_internal" target="_blank" rel='noreferrer' title="Link to facebook review page" className="btn reviewBtn wow fadeInUp" data-wow-delay="0.4s">Write a Review</a>
             </div>
 
-            <div className="row pt-5 services" style="background-image: url('/public/images/services.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;" >
+            <div className="row pt-5 services">
               <div className="col-md-12 pb-3">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Services</h2>
               </div>
@@ -233,7 +234,7 @@ export default function App() {
                   <div className="row">
                     <div className="col-sm-3 text-center mx-auto my-auto py-5">
                       <i className="fas fa-wave-sine fa-5x"></i>
-                      <img src="/public/images/sine_wave.png" alt="Sine wave" style="width: 100px"/>
+                      <img className='sine-wave' src={sine_wave} alt="Sine wave"/>
                     </div>
                     <div className="col-sm-9 my-auto">
                       <h4>Flexible To Suit Your Needs</h4>
@@ -301,13 +302,11 @@ export default function App() {
                         <i className="fas fa-microscope fa-2x"></i>
                       </div>
                       <h4>Chemistry & Biology</h4>
-                      </br>
 
                       <div className="row m-auto">
                         <p className="col-md-12 my-auto">
                           Tutor: David Bestford   
-                        </p> 
-                        </br></br>
+                        </p>
                         <p className="col-md-12 my-auto">
                           <a href="tel:07946177025" title="Phone doncaster chemistry & biology tutor" className="underline">Contact: 07946177025</a>
                         </p>
@@ -514,11 +513,11 @@ export default function App() {
             <form className="row contact" id="contact-form" method="post" action="/public/php/send_form_email.php">
               <div className="form-group col-md-6">
                 
-                <input name="name" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="nameInput" placeholder="Your Name">
+                <input name="name" type="text" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="nameInput" placeholder="Your Name" />
               </div>
               <div className="form-group col-md-6">
                 
-                <input name="email" type="email" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="emailInput" placeholder="Your Email">
+                <input name="email" type="email" className="form-control wow fadeInDown" data-wow-delay="0.3s" id="emailInput" placeholder="Your Email" />
               </div>
               <div className="form-group col-md-12">
                 
@@ -551,7 +550,7 @@ export default function App() {
               </div>
               <div className="col-md-4 text-center my-2 wow fadeIn" data-wow-delay="0.4s">
                 <i className="fab fa-facebook-square fa-2x"></i>
-                <a href="https://www.facebook.com/Gradu8maths/" target="_blank" title="Doncaster maths tutor's facebook">
+                <a href="https://www.facebook.com/Gradu8maths/" target="_blank" rel='noreferrer' title="Doncaster maths tutor's facebook">
                   <p className="underline a-contact">
                     facebook
                   </p>
@@ -564,7 +563,7 @@ export default function App() {
             </div>
         
           </div>
-      </main > */}
+      </main >
     </React.Fragment>
   );
 };
