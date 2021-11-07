@@ -8,11 +8,19 @@ header,
   scroll-behavior: smooth;
 }
 
+.logo {
+  width: 40px;
+}
+
 .background {
   background-image: url("/src/assets/A_level_maths.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.dropdown-arrow {
+  margin-right: 1em;
 }
 
 @media (max-width: 740px) {
@@ -34,6 +42,7 @@ header,
   .testimonials {
     height: 400px !important;
   }
+
   .carousel-indicators {
     bottom: -30px !important;
   }
@@ -46,6 +55,7 @@ header,
     padding: 0% !important;
     z-index: 5 !important;
   }
+
   #aboutMe {
     padding: 10% 0% !important;
   }
@@ -67,9 +77,11 @@ header,
   .faq {
     padding: 10% 5% !important;
   }
+
   .contact {
     padding: 10% 10% !important;
   }
+
   #contact {
     padding-top: 20% !important;
     padding-bottom: 0% !important;
@@ -84,6 +96,7 @@ header,
   .btn {
     width: 80% !important;
   }
+
   .faqBtn {
     width: 100% !important;
   }
@@ -93,11 +106,9 @@ header,
   .carousel-item {
     height: 470px !important;
   }
+
   .testimonials {
     height: 500px !important;
-  }
-  .spacer {
-    height: 150px !important;
   }
 }
 
@@ -148,6 +159,7 @@ header,
   background: #fff;
   transition: width 0.3s;
 }
+
 .underline:hover::after {
   width: 100%;
   transition: width 0.3s;
@@ -222,10 +234,6 @@ h5 {
   border: 10px solid rgba(238, 232, 222, 1);
   max-height: 350px;
   max-width: 350px;
-}
-
-.spacer {
-  height: 70px;
 }
 
 .testimonials {
@@ -422,7 +430,6 @@ button:hover {
   -ms-transition: opacity 2s ease-in-out;
   -o-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
-
   opacity: 0;
 }
 
@@ -470,8 +477,7 @@ label:focus,
   box-shadow: none !important;
 }
 
-/* animate.css  */
-
+/* animate.css */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
