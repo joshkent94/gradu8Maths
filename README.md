@@ -5,6 +5,7 @@
 ## Table of contents
 
 - [General info](#general-info)
+- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Features](#features)
 - [Status](#status)
@@ -13,6 +14,10 @@
 ## General info
 
 A website for a maths tutor. Visitors to the site can see relevant information, write reviews and contact the tutor.
+
+## Screenshot
+
+![Screenshot of website](./src/assets/gradu8_maths_tutor.png)
 
 ## Technologies
 
@@ -30,7 +35,7 @@ Features ready:
 
 ## Status
 
-Project is finished.
+Project is unfinished.
 
 ## Contact
 
