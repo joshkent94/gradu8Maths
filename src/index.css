@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 header,
@@ -143,14 +147,6 @@ header,
   color: whitesmoke;
 }
 
-.scrolled {
-  background-color: rgba(238, 232, 222, 1) !important;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(90, 90, 90, 0.5) !important;
-  transition: background-color 600ms linear, border-color 600ms linear;
-}
-
 .underline::after {
   content: "";
   display: block;
@@ -163,6 +159,13 @@ header,
 .underline:hover::after {
   width: 100%;
   transition: width 0.3s;
+}
+
+.navbar {
+  background-color: rgba(238, 232, 222, 1) !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(90, 90, 90, 0.5) !important;
 }
 
 .navbar-brand {
@@ -259,6 +262,18 @@ h5 {
 
 .card {
   background-color: rgba(90, 90, 90, 0.965);
+}
+
+.card-body {
+  padding: 1.25rem;
+  background: rgba(238, 232, 222, 1);
+  color: black;
+  border-top: 1px solid black;
+}
+
+button[aria-expanded="true"] {
+  background-color: rgba(238, 232, 222, 1);
+  color: black;
 }
 
 .sine-wave {
@@ -367,20 +382,13 @@ h5 {
   border: 2px solid rgba(86, 80, 80, 0.6);
 }
 
-.show {
-  z-index: 2000 !important;
-  background: rgba(238, 232, 222, 1);
-  color: black;
-  border-top: 1px solid black;
-}
-
 .collapsing {
   background: rgba(238, 232, 222, 1);
   color: black;
   border-top: 1px solid black;
 }
 
-button[aria-expanded="true"] {
+.active-faq {
   background-color: rgba(238, 232, 222, 1);
   color: black;
 }

@@ -2,7 +2,7 @@ import logo from '../assets/gradu8_maths.png';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-md navbar-light fixed-top wow fadeIn" data-wow-delay="0.6s">
+        <nav className="navbar navbar-expand-md navbar-light fixed-top wow fadeIn container-fluid" data-wow-delay="0.6s">
             <div className="container">
                 <a className="navbar-brand" href="/" title="Gradu8 Maths">
                     <img className='logo' src={logo} alt="Gradu8 Maths | A level maths tutor in Doncaster" />

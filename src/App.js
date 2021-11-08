@@ -1,10 +1,10 @@
 import React from "react";
 import WOW from 'wow.js';
-import $ from 'jquery';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faPlus, faFlask, faMicroscope, faAtom, faPenAlt, faAngleRight, faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Heading from "./components/Heading";
 import About from "./components/About";
@@ -21,14 +21,6 @@ export default function App() {
 
   // initialise wow.js
   new WOW().init();
-
-  // using jquery to toggle a class another navbar
-  $(function () {
-    $(document).scroll(function () {
-      const $nav = $(".fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
 
   return (
     <React.Fragment>
