@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
     return (
-        <div className="row" id="copyright">
+        <footer className="row" id="copyright">
             <div className="col-md-4  text-center my-2 wow fadeIn" data-wow-delay="0.4s">
                 <FontAwesomeIcon icon='envelope-square' size='2x'/>
                 <a href="mailto:gradu8maths@gmail.com" title="Email doncaster maths tutor">
@@ -24,6 +24,6 @@ export default function Footer() {
             <div className="col-md-12">
                 <p className="pt-4">Gradu8 Maths &copy; 2020</p>
             </div>
-        </div>
+        </footer>
     );
 };

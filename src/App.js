@@ -33,15 +33,15 @@ export default function App() {
   return (
     <React.Fragment>
       <Heading />
-      <div className="container-fluid padding"> 
+      <main className="container-fluid padding">
         <About />
         <Testimonials />
         <Services />
         <Recommendations />
         <Faqs />
         <Contact />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </React.Fragment>
   );
 };
