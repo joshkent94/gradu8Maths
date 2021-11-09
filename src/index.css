@@ -6,14 +6,10 @@ html,
 body,
 header,
 .view {
-  height: 100%;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   background-color: rgba(238, 232, 222, 1);
   scroll-behavior: smooth;
-}
-
-.logo {
-  width: 40px;
 }
 
 .background {
@@ -21,10 +17,6 @@ header,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.dropdown-arrow {
-  margin-right: 1em;
 }
 
 #overlay {
@@ -72,19 +64,30 @@ header,
   transition: width 0.3s;
 }
 
+.nav-item {
+  margin: 0 0.3rem;
+}
+
 .navbar {
   background-color: rgba(238, 232, 222, 1) !important;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(90, 90, 90, 0.5) !important;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
   font-family: "Montserrat", sans-serif;
+  margin: 0 1rem;
+}
+
+.logo {
+  width: 40px;
 }
 
 .navbar-collapse {
   background: transparent !important;
+  flex-grow: 0;
 }
 
 .top-nav-collapse {
@@ -110,10 +113,21 @@ a:hover {
 
 h1 {
   letter-spacing: 8px;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 h5 {
   letter-spacing: 3px;
+  font-weight: 300;
+}
+
+hr {
+  opacity: 1;
+  margin: auto;
 }
 
 .hr-light {
@@ -189,20 +203,37 @@ h5 {
   background: rgba(238, 232, 222, 1);
   color: black;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -moz-transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -ms-transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -o-transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-  -webkit-transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -ms-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -o-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -webkit-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
   max-height: 0;
   padding: 0 1.25rem;
   border: none;
+}
+
+.card-body:hover {
+  cursor: pointer;
 }
 
 .show {
   max-height: 500px;
   padding: 1.25rem;
   border-top: 1px solid black;
+}
+
+.dropdown-arrow {
+  margin-right: 1em;
+  transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 .faq {
@@ -229,13 +260,32 @@ h5 {
   padding: 20px 20% 20px 20%;
 }
 
+#contact-methods {
+  display: flex;
+  width: 100%;
+}
+
+.contact-method {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #copyright {
   background-color: rgba(238, 232, 222, 1);
   color: rgba(90, 90, 90, 1) !important;
+  display: flex;
+  flex-direction: column;
 }
 
 #contactDetails {
   background-color: rgba(238, 232, 222, 1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 
 .form-control {
@@ -295,6 +345,7 @@ h5 {
 
 .a-contact {
   color: rgba(90, 90, 90, 0.95);
+  margin-top: 0.5rem;
 }
 
 .dropdown-menu {

@@ -1,11 +1,10 @@
 import React from "react";
 import WOW from 'wow.js';
+import 'animate.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faPlus, faFlask, faMicroscope, faAtom, faPenAlt, faAngleRight, faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import 'animate.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Heading from "./components/Heading";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
