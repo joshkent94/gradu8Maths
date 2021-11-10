@@ -5,7 +5,7 @@ export default function Heading() {
         <header>
             <Navbar />
             <div className="view wow fadeIn background">
-                <div className="mask rgba-black-light align-items-center">
+                <div className="align-items-center">
                     <div className="container">
                         <div className="row g-0">
                             <div className="col-md-12 mb-4 text-center wow fadeInUp centerTitle">

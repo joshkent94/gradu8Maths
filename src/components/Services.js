@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Services() {
     return (
-        <div className="row pt-5 services" id='services'>
-            <div className="col-md-12 pb-3">
+        <div className="row" id='services'>
+            <div className="col-md-12 section-heading">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Services</h2>
             </div>
             <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">

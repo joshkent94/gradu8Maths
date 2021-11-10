@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Faq(props) {
-    const faq = props.faq;
+    const {faq} = props;
 
     const handleClick = e => {
         const button = e.target;

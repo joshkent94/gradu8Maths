@@ -1,3 +1,4 @@
+/* general */
 * {
   box-sizing: border-box;
 }
@@ -12,42 +13,9 @@ header,
   scroll-behavior: smooth;
 }
 
-.background {
-  background-image: url("/src/assets/A_level_maths.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#overlay {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  z-index: 1001;
-}
-
-#announcement {
-  display: none;
-  position: absolute;
-  width: 250px;
-  height: 120px;
-  padding: 0 16px;
-  background-color: rgba(90, 90, 90, 1);
-  border-radius: 5px;
-  z-index: 1002;
-  color: whitesmoke;
-}
-
-#close {
-  display: inline;
-  float: right;
-  color: whitesmoke;
+.section-heading {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .underline::after {
@@ -64,46 +32,9 @@ header,
   transition: width 0.3s;
 }
 
-.nav-item {
-  margin: 0 0.3rem;
-}
-
-.navbar {
-  background-color: rgba(238, 232, 222, 1) !important;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(90, 90, 90, 0.5) !important;
-  padding: 0.5rem 1rem;
-}
-
-.navbar-brand {
-  font-family: "Montserrat", sans-serif;
-  margin: 0 1rem;
-}
-
-.logo {
-  width: 40px;
-}
-
-.navbar-collapse {
-  background: transparent !important;
-  flex-grow: 0;
-}
-
-.top-nav-collapse {
-  background-color: rgb(238, 232, 222, 1) !important;
-  border-bottom-color: transparent !important;
-  border-bottom-width: 1px !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: rgba(238, 232, 222, 0.7);
-  border-bottom-color: transparent;
-  border-bottom-width: 1px;
-}
-
 a {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 a:hover {
@@ -135,6 +66,87 @@ hr {
   width: 80px;
 }
 
+.button:active,
+button:active,
+.button:focus,
+button:focus,
+.button:hover,
+button:hover {
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/* heading */
+.logo {
+  width: 40px;
+}
+
+.nav-item {
+  margin: 0 0.3rem;
+}
+
+.navbar {
+  background-color: rgba(238, 232, 222, 1) !important;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(90, 90, 90, 0.5) !important;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 1rem;
+}
+
+.navbar-collapse {
+  background: transparent !important;
+  flex-grow: 0;
+}
+
+.top-nav-collapse {
+  background-color: rgb(238, 232, 222, 1) !important;
+  border-bottom-color: transparent !important;
+  border-bottom-width: 1px !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: rgba(238, 232, 222, 0.7);
+  border-bottom-color: transparent;
+  border-bottom-width: 1px;
+}
+
+.background {
+  background-image: url("/src/assets/A_level_maths.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .centerTitle {
   margin-top: 200px;
   border-radius: 5px;
@@ -142,6 +154,7 @@ hr {
   background-color: rgba(238, 232, 222, 0.85);
 }
 
+/* about */
 #aboutMe {
   background-color: rgb(90, 90, 90);
   color: whitesmoke;
@@ -156,25 +169,122 @@ hr {
   max-width: 350px;
 }
 
-.testimonials {
+/* testimonials */
+#testimonials {
   background-color: rgba(238, 232, 222, 1);
-  height: 300px;
 }
 
-#writeReview {
+.font-italic {
+  font-style: italic;
+}
+
+.carousel {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-inner {
+  height: max-content;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  position: unset;
+}
+
+.carousel-caption {
+  width: 100%;
+  text-align: right;
+  position: unset;
+  right: 0;
+  left: 0;
+  padding: 0;
+  color: black;
+}
+
+.caption-text {
+  font-weight: 400;
+}
+
+.carousel-indicators {
+  position: inherit;
+  order: 2;
+  margin: auto;
+}
+
+.carousel-text {
+  margin: 0;
+}
+
+#write-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.reviewBtn {
+  background: rgba(86, 80, 80, 0.1);
+  color: black;
+  border: 2px solid rgba(90, 90, 90, 0.95) !important;
   width: 50% !important;
   overflow: hidden;
   transition: 0.6s all ease;
 }
 
-.services {
+/* services */
+#services {
   background-color: rgba(86, 80, 80, 0.8);
   color: rgba(238, 232, 222, 1);
-  padding: 10% 0% !important;
+  padding: 3rem 0;
   background-image: url("/src/assets/services.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.sine-wave {
+  width: 100px;
+}
+
+/* recommendations */
+#recommendations {
+  background-color: rgba(238, 232, 222, 1);
+  color: black;
+}
+
+.recommendationsCard {
+  color: whitesmoke;
+}
+
+/* faq */
+#faqs {
+  background-color: rgba(90, 90, 90, 1);
+  color: whitesmoke;
+}
+
+.active-faq {
+  background-color: rgba(238, 232, 222, 1);
+  color: black !important;
+}
+
+.faqBtn {
+  color: whitesmoke;
+  text-align: left;
+  width: 100% !important;
+  white-space: normal !important;
+}
+
+.faqBtn:hover {
+  background: rgba(238, 232, 222, 1);
+  color: black;
+}
+
+.accordion {
+  width: 100%;
 }
 
 .accordion > .card:not(:first-of-type) {
@@ -236,52 +346,14 @@ hr {
   transform: rotate(90deg);
 }
 
-.faq {
-  background-color: rgba(90, 90, 90, 1);
-  color: whitesmoke;
-}
-
-.sine-wave {
-  width: 100px;
-}
-
-#recommendations {
+/* contact */
+#contact {
   background-color: rgba(238, 232, 222, 1);
-  color: black;
+  justify-content: center;
 }
 
-.recommendationsCard {
-  color: whitesmoke;
-}
-
-.contact {
-  background-color: rgba(238, 232, 222, 1);
-  border-color: whitesmoke !important;
-  padding: 20px 20% 20px 20%;
-}
-
-#contact-methods {
-  display: flex;
-  width: 100%;
-}
-
-.contact-method {
-  flex-basis: 0;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#copyright {
-  background-color: rgba(238, 232, 222, 1);
-  color: rgba(90, 90, 90, 1) !important;
-  display: flex;
-  flex-direction: column;
-}
-
-#contactDetails {
-  background-color: rgba(238, 232, 222, 1);
+#contact-form {
+  width: 70%;
 }
 
 .form-group {
@@ -318,22 +390,6 @@ hr {
   height: 120px !important;
 }
 
-.reviewBtn {
-  background: rgba(86, 80, 80, 0.1);
-  color: black;
-  border: 2px solid rgba(90, 90, 90, 0.95) !important;
-  width: 50% !important;
-  overflow: hidden;
-  transition: 0.6s all ease;
-}
-
-.faqBtn {
-  color: whitesmoke;
-  text-align: left;
-  width: 100% !important;
-  white-space: normal !important;
-}
-
 .contactBtn {
   background: rgba(86, 80, 80, 0.1);
   color: black;
@@ -341,6 +397,33 @@ hr {
   width: 50% !important;
   overflow: hidden;
   transition: 0.6s all ease;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* footer */
+#copyright {
+  background-color: rgba(238, 232, 222, 1);
+  color: rgba(90, 90, 90, 1) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactDetails {
+  background-color: rgba(238, 232, 222, 1);
+}
+
+#contact-methods {
+  display: flex;
+  width: 100%;
+}
+
+.contact-method {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .a-contact {
@@ -348,112 +431,11 @@ hr {
   margin-top: 0.5rem;
 }
 
-.dropdown-menu {
-  position: absolute;
-  background: rgba(240, 240, 240, 1);
-  color: black;
-  z-index: 1000 !important;
-}
-
 .contactBtn:hover,
 .reviewBtn:hover {
   background: rgba(86, 80, 80, 0.6);
   color: whitesmoke;
   border: 2px solid rgba(86, 80, 80, 0.6);
-}
-
-.collapsing {
-  background: rgba(238, 232, 222, 1);
-  color: black;
-  border-top: 1px solid black;
-}
-
-.active-faq {
-  background-color: rgba(238, 232, 222, 1);
-  color: black;
-}
-
-.faqBtn:hover {
-  background: rgba(238, 232, 222, 1);
-  color: black;
-}
-
-.accordion {
-  width: 100%;
-}
-
-.button:active,
-button:active,
-.button:focus,
-button:focus,
-.button:hover,
-button:hover {
-  outline: none !important;
-}
-
-.carousel-item {
-  height: 300px;
-}
-
-.carousel-indicators {
-  bottom: 20px;
-}
-
-.carousel-inner .item {
-  text-align: center !important;
-}
-
-.carousel.carousel-fade .carousel-item {
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-  opacity: 0;
-}
-
-.carousel.carousel-fade .active.carousel-item {
-  opacity: 1;
-}
-
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.carousel.carousel-fade .next,
-.carousel.carousel-fade .prev {
-  left: 0;
-  z-index: 1;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none !important;
-}
-
-textarea:hover,
-input:hover,
-textarea:active,
-input:active,
-textarea:focus,
-input:focus,
-a:focus,
-a:active,
-a:hover,
-button:focus,
-button:active,
-button:hover,
-label:focus,
-.btn:active,
-.btn.active {
-  outline: 0px !important;
-  -webkit-appearance: none;
-  box-shadow: none !important;
 }
 
 /* keyframe stuff */
@@ -583,12 +565,8 @@ label:focus,
 }
 
 @media (max-width: 576px) {
-  .testimonials {
+  #testimonials {
     height: 400px !important;
-  }
-
-  .carousel-indicators {
-    bottom: -30px !important;
   }
 
   .carousel-item {
@@ -618,12 +596,8 @@ label:focus,
     padding: 10% 0% !important;
   }
 
-  .faq {
+  #faq {
     padding: 10% 5% !important;
-  }
-
-  .contact {
-    padding: 10% 10% !important;
   }
 
   #contact {
@@ -651,7 +625,7 @@ label:focus,
     height: 470px !important;
   }
 
-  .testimonials {
+  #testimonials {
     height: 500px !important;
   }
 }

@@ -3,8 +3,8 @@ import Faq from "./Faq";
 
 export default function Faqs() {
     return (
-        <div className="row p-5 faq" id="faq">
-            <div className="col-md-12 py-5">
+        <div className="row p-5" id="faqs">
+            <div className="col-md-12 section-heading">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Frequently Asked Questions (FAQs)</h2>
             </div>
 
