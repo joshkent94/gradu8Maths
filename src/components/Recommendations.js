@@ -13,9 +13,9 @@ export default function Recommendations() {
                 <div className="my-3 p-5 card recommendationsCard">
                     <div className="row">
                         <div className="col-md-6 mx-auto text-center my-auto py-3">
-                            <div className="row d-flex justify-content-center">
-                                <FontAwesomeIcon icon='flask' size='2x' />
-                                <FontAwesomeIcon icon='microscope' size='2x' />
+                            <div className="row recommendation-icons">
+                                <FontAwesomeIcon icon='flask' size='2x' className="recommendation-icon" />
+                                <FontAwesomeIcon icon='microscope' size='2x' className="recommendation-icon" />
                             </div>
                             <h4>Chemistry & Biology</h4>
                             <div className="row m-auto">
@@ -33,8 +33,8 @@ export default function Recommendations() {
                 <div className="my-3 p-5 card recommendationsCard">
                     <div className="row">
                         <div className="col mx-auto  text-center my-auto py-5">
-                            <FontAwesomeIcon icon='atom' size='2x' />
-                            <h4>Physics</h4>
+                            <FontAwesomeIcon icon='atom' size='2x' className="recommendation-icons" />
+                            <h4 className="remove-margin">Physics</h4>
                         </div>
                         <div className="col m-auto p-3">
                             <p className="m-auto">Details Coming Soon.</p>
@@ -46,8 +46,8 @@ export default function Recommendations() {
                 <div className="my-3 p-5 card recommendationsCard">
                     <div className="row">
                         <div className="col mx-auto text-center my-auto py-5">
-                            <FontAwesomeIcon icon='pen-alt' size='2x' />
-                            <h4>English</h4>
+                            <FontAwesomeIcon icon='pen-alt' size='2x' className="recommendation-icons" />
+                            <h4 className="remove-margin">English</h4>
                         </div>
                         <div className="col m-auto p-3">
                             <p className="m-auto">Details Coming Soon.</p>

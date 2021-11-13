@@ -22,7 +22,7 @@ export default function Navbar() {
                         <Nav.Link className="nav-link underline" href="#recommendations" title="Recommendations">Recommendations</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link className="nav-link underline" href="#faq" title="Frequently Asked Questions">FAQ</Nav.Link>
+                        <Nav.Link className="nav-link underline" href="#faqs" title="Frequently Asked Questions">FAQ</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link className="nav-link underline" href="#contact" title="Contact">Contact</Nav.Link>
