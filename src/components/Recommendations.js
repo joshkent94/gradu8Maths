@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Recommendations() {
     return (
-        <div className="row p-5" id="recommendations">
+        <div id="recommendations">
             <div className="col-md-12 section-heading">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Recommendations</h2>
             </div>

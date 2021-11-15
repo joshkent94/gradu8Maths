@@ -2,7 +2,7 @@ import selfie from '../assets/doncaster_maths_tutor.jpg'
 
 export default function About() {
     return (
-        <div className="row p-5" id="aboutMe">
+        <div id="aboutMe">
             <h2 className="col-md-12 section-heading text-center wow fadeInUp">Hi, I'm Andy Kent</h2>
             <div className="col-lg-6 p-4 my-auto text-center wow fadeIn" data-wow-delay="0.4s" id="profilePhotoContainer">
                 <img className="img-fluid w-100" src={selfie} alt="A level and GCSE maths tutor in Doncaster" id="profilePhoto" />

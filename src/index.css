@@ -162,6 +162,7 @@ label:focus,
 #aboutMe {
   background-color: rgb(90, 90, 90);
   color: whitesmoke;
+  padding: 3rem;
 }
 
 #profilePhoto {
@@ -176,6 +177,7 @@ label:focus,
 /* testimonials */
 #testimonials {
   background-color: rgba(238, 232, 222, 1);
+  padding: 3rem;
 }
 
 .font-italic {
@@ -265,6 +267,7 @@ label:focus,
 #recommendations {
   background-color: rgba(238, 232, 222, 1);
   color: black;
+  padding: 3rem;
 }
 
 .recommendationsCard {
@@ -280,10 +283,11 @@ label:focus,
   width: unset !important;
 }
 
-/* faq */
+/* faqs */
 #faqs {
   background-color: rgba(90, 90, 90, 1);
   color: whitesmoke;
+  padding: 3rem;
 }
 
 .active-faq {
@@ -369,7 +373,11 @@ label:focus,
 /* contact */
 #contact {
   background-color: rgba(238, 232, 222, 1);
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
 }
 
 #contact-form {
@@ -448,7 +456,7 @@ label:focus,
 
 .a-contact {
   color: rgba(90, 90, 90, 0.95);
-  margin-top: 0.5rem;
+  margin: 0.5rem;
 }
 
 .contactBtn:hover,
@@ -569,22 +577,13 @@ label:focus,
   }
 }
 
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
-}
-
 @media (max-width: 992px) {
   #profilePhotoContainer {
     padding: 10% 20% !important;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #testimonials {
     height: 400px !important;
   }
@@ -620,23 +619,32 @@ label:focus,
     padding: 10% 5% !important;
   }
 
+  .faqBtn {
+    width: 100% !important;
+  }
+
+  .carousel-control.left {
+    left: 0;
+  }
+
+  .carousel-control.right {
+    right: 0;
+  }
+
   #contact {
-    padding-top: 20% !important;
-    padding-bottom: 0% !important;
+    padding: 10%;
+  }
+
+  #contact-methods {
+    flex-direction: column;
+  }
+
+  .contact-method {
+    margin-bottom: 1rem;
   }
 
   #copyright {
     padding: 0% 10%;
-  }
-}
-
-@media (max-width: 576px) {
-  .btn {
-    width: 80% !important;
-  }
-
-  .faqBtn {
-    width: 100% !important;
   }
 }
 
@@ -647,22 +655,5 @@ label:focus,
 
   #testimonials {
     height: 500px !important;
-  }
-}
-
-@media (max-width: 1500px) {
-  .navbar:not(.top-nav-collapse) {
-    background: rgba(238, 232, 222, 0.7);
-    border-bottom-color: transparent;
-    border-bottom-width: 1px;
-  }
-}
-
-@media (max-width: 570px) {
-  .carousel-control.left {
-    left: 0;
-  }
-  .carousel-control.right {
-    right: 0;
   }
 }

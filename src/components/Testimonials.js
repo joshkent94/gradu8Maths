@@ -10,7 +10,7 @@ export default function Testimonials() {
     };
 
     return (
-        <div className="row p-5" id="testimonials">
+        <div id="testimonials">
             <Carousel fade={true} controls={false} interval={7000} activeIndex={index} onSelect={handleSelect} className="col-md-12 align-self-center">
                 {testimonialList.map(testimonial => {
                     return (

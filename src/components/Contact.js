@@ -28,7 +28,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="row p-5" id="contact">
+        <div id="contact">
             <div className="col-md-12 section-heading">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Contact</h2>
             </div>
