@@ -1,6 +1,6 @@
 # Gradu8 Maths
 
-> Website for a maths tutor
+> Website for Gradu8 Maths tuition.
 
 ## Table of contents
 
@@ -13,7 +13,7 @@
 
 ## General info
 
-A website for a maths tutor. Visitors to the site can see relevant information, write reviews and contact the tutor.
+A website for Gradu8 Maths tuition. Visitors to the site can see relevant information, write reviews and contact the tutor.
 
 ## Screenshot
 
@@ -35,7 +35,7 @@ Features ready:
 
 ## Status
 
-Project is unfinished.
+Project is finished.
 
 ## Contact
 
