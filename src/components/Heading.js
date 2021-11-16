@@ -1,9 +1,9 @@
-import Navbar from "./Navbar";
+import Navigation from "./Navigation";
 
 export default function Heading() {
     return (
         <header>
-            <Navbar />
+            <Navigation />
             <div className="view wow fadeIn background">
                 <div className="align-items-center">
                     <div className="container">

@@ -6,7 +6,7 @@ export default function Recommendations() {
             <div className="col-md-12 section-heading">
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Recommendations</h2>
             </div>
-            <div className="col-md-12 px-5 mx-auto wow fadeIn" data-wow-delay="0.5s">
+            <div id="recommendation-heading" className="col-md-12 wow fadeIn" data-wow-delay="0.5s">
                 <p>My students often ask me to recommend tutors for other subjects, particularly English and the sciences. I must stress at this point that I do not employ these people nor do I receive an introductory fee, I simply want to make my students aware of the very best tutors out there. My recommendations are based solely on the feedback that I’ve received from students throughout my 10+ years in the tutoring business.</p>
             </div>
             <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
@@ -29,28 +29,30 @@ export default function Recommendations() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div className="my-3 p-5 card recommendationsCard">
-                    <div className="row">
-                        <div className="col mx-auto  text-center my-auto py-5">
-                            <FontAwesomeIcon icon='atom' size='2x' className="recommendation-icons" />
-                            <h4 className="remove-margin">Physics</h4>
-                        </div>
-                        <div className="col m-auto p-3">
-                            <p className="m-auto">Details Coming Soon.</p>
+            <div id="additional-recommendations">
+                <div className="col-md-6 wow fadeInUp additional-recommendation" data-wow-delay="0.3s">
+                    <div className="my-3 p-5 card recommendationsCard">
+                        <div className="row">
+                            <div className="col mx-auto  text-center my-auto py-5">
+                                <FontAwesomeIcon icon='atom' size='2x' className="recommendation-icons" />
+                                <h4 className="remove-margin">Physics</h4>
+                            </div>
+                            <div className="col m-auto p-3">
+                                <p className="m-auto">Details Coming Soon.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div className="my-3 p-5 card recommendationsCard">
-                    <div className="row">
-                        <div className="col mx-auto text-center my-auto py-5">
-                            <FontAwesomeIcon icon='pen-alt' size='2x' className="recommendation-icons" />
-                            <h4 className="remove-margin">English</h4>
-                        </div>
-                        <div className="col m-auto p-3">
-                            <p className="m-auto">Details Coming Soon.</p>
+                <div className="col-md-6 wow fadeInUp additional-recommendation" data-wow-delay="0.3s">
+                    <div className="my-3 p-5 card recommendationsCard">
+                        <div className="row">
+                            <div className="col mx-auto text-center my-auto py-5">
+                                <FontAwesomeIcon icon='pen-alt' size='2x' className="recommendation-icons" />
+                                <h4 className="remove-margin">English</h4>
+                            </div>
+                            <div className="col m-auto p-3">
+                                <p className="m-auto">Details Coming Soon.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
