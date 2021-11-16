@@ -1,5 +1,6 @@
-import { faqList } from "../utils/helperFunctions/faqList";
+import { faqList } from "../../utils/helperFunctions/faqList";
 import Faq from "./Faq";
+import './Faqs.css';
 
 export default function Faqs() {
     return (

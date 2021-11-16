@@ -1,0 +1,85 @@
+#faqs {
+  background-color: rgba(90, 90, 90, 1);
+  color: whitesmoke;
+  padding: 3rem;
+}
+
+.active-faq {
+  background-color: rgba(238, 232, 222, 1);
+  color: black !important;
+}
+
+.faqBtn {
+  color: whitesmoke;
+  text-align: left;
+  width: 100% !important;
+  white-space: normal !important;
+}
+
+.faqBtn:hover {
+  background: rgba(238, 232, 222, 1);
+  color: black;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion > .card:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+  padding: 0.75rem 1.25rem;
+}
+
+.card {
+  background-color: rgba(90, 90, 90, 0.965);
+  overflow: hidden;
+}
+
+.card-body {
+  background: rgba(238, 232, 222, 1);
+  color: black;
+  overflow: hidden;
+  transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -ms-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -o-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  -webkit-transition: max-height 0.5s linear, padding 0.5s ease-in-out;
+  max-height: 0;
+  padding: 0 1.25rem;
+  border: none;
+}
+
+.card-body:hover {
+  cursor: pointer;
+}
+
+.show {
+  max-height: 500px;
+  padding: 1.25rem;
+  border-top: 1px solid black;
+}
+
+.dropdown-arrow {
+  margin-right: 1em;
+  transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}

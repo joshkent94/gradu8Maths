@@ -1,4 +1,5 @@
-import selfie from '../assets/doncaster_maths_tutor.jpg'
+import selfie from '../../assets/doncaster_maths_tutor.jpg'
+import './About.css';
 
 export default function About() {
     return (

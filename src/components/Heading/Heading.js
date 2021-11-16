@@ -1,4 +1,5 @@
 import Navigation from "./Navigation";
+import './Heading.css';
 
 export default function Heading() {
     return (

@@ -1,5 +1,6 @@
-import sine_wave from '../assets/sine_wave.png';
+import sine_wave from '../../assets/sine_wave.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Services.css';
 
 export default function Services() {
     return (

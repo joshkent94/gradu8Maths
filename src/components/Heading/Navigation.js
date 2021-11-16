@@ -1,4 +1,4 @@
-import logo from '../assets/gradu8_maths.png';
+import logo from '../../assets/gradu8_maths.png';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 export default function Navigation() {

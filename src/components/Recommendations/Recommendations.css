@@ -1,0 +1,32 @@
+#recommendations {
+  background-color: rgba(238, 232, 222, 1);
+  color: black;
+  padding: 3rem;
+}
+
+#recommendation-heading {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+#additional-recommendations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-recommendation {
+  width: 48%;
+}
+
+.recommendationsCard {
+  color: whitesmoke;
+}
+
+.recommendation-icons {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.recommendation-icon {
+  width: unset !important;
+}

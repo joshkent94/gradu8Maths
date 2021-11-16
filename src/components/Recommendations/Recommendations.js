@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Recommendations.css';
 
 export default function Recommendations() {
     return (

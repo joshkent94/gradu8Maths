@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import { testimonialList } from '../utils/helperFunctions/testimonialList';
+import { testimonialList } from '../../utils/helperFunctions/testimonialList';
+import './Testimonials.css';
 
 export default function Testimonials() {
     const [index, setIndex] = useState(0);
