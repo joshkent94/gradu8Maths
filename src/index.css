@@ -107,7 +107,7 @@ label:focus,
 }
 
 .remove-margin {
-  margin: 0;
+  margin: 0 !important;
 }
 
 /* keyframe stuff */
@@ -222,6 +222,10 @@ label:focus,
 }
 
 @media (max-width: 992px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+
   #profilePhotoContainer {
     padding: 0 10% 5% !important;
     width: 100%;

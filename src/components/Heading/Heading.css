@@ -39,3 +39,12 @@
   padding: 10px;
   background-color: rgba(238, 232, 222, 0.85);
 }
+
+.main-title {
+  text-indent: 8px;
+}
+
+.sub-title {
+  margin-bottom: 1rem !important;
+  text-indent: 3px;
+}
