@@ -8,7 +8,7 @@ export default function Recommendations() {
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Recommendations</h2>
             </div>
             <div id="recommendation-heading" className="col-md-12 wow fadeIn" data-wow-delay="0.5s">
-                <p>My students often ask me to recommend tutors for other subjects, particularly English and the sciences. I must stress at this point that I do not employ these people nor do I receive an introductory fee, I simply want to make my students aware of the very best tutors out there. My recommendations are based solely on the feedback that I’ve received from students throughout my 10+ years in the tutoring business.</p>
+                <p>My students often ask me to recommend tutors for other subjects, particularly English and the sciences. I must stress at this point that I do not employ these people nor do I receive an introductory fee, I simply want to make my students aware of the very best tutors out there. My recommendations are based solely on the feedback that I've received from students throughout my 10+ years in the tutoring business.</p>
             </div>
             <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
                 <div className="my-3 p-5 card recommendationsCard">
@@ -25,7 +25,7 @@ export default function Recommendations() {
                             </div>
                         </div>
                         <div className="col-md-6 m-auto p-3">
-                            <p className="m-auto text-justify">Dave has a 2:1 degree in Biology and Chemistry from the University of Salford. He obtained his PGCE from the University of Sheffield and has since taught Biology in secondary schools at both GCSE and ‘A’ level for over 40 years. He has also taught GCSE Chemistry over this same period. For over 20 years Dave has been an examiner for Biology, initially at GCSE level and now at ‘A’ level. He has over 30 years experience as a personal tutor and comes highly recommended.</p>
+                            <p className="m-auto text-justify">Dave has a 2:1 degree in Biology and Chemistry from the University of Salford. He obtained his PGCE from the University of Sheffield and has since taught Biology in secondary schools at both GCSE and 'A' level for over 40 years. He has also taught GCSE Chemistry over this same period. For over 20 years Dave has been an examiner for Biology, initially at GCSE level and now at 'A' level. He has over 30 years experience as a personal tutor and comes highly recommended.</p>
                         </div>
                     </div>
                 </div>

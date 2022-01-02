@@ -25,7 +25,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="col-md-12 text-center">
-                <p className="pt-4">Gradu8 Maths &copy; 2021</p>
+                <p className="pt-4">Gradu8 Maths &copy; 2022</p>
             </div>
         </footer>
     );

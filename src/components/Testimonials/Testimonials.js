@@ -12,7 +12,7 @@ export default function Testimonials() {
 
     return (
         <div id="testimonials">
-            <Carousel fade={true} controls={false} interval={7000} activeIndex={index} onSelect={handleSelect} className="col-md-12 align-self-center">
+            <Carousel fade={true} controls={false} interval={15000} activeIndex={index} onSelect={handleSelect} className="col-md-12 align-self-center">
                 {testimonialList.map(testimonial => {
                     return (
                         <Carousel.Item key={testimonial.reviewer} className="align-items-center">

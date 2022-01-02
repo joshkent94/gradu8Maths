@@ -1,3 +1,4 @@
+import { Accordion } from "react-bootstrap";
 import { faqList } from "../../utils/helperFunctions/faqList";
 import Faq from "./Faq";
 import './Faqs.css';
@@ -9,11 +10,11 @@ export default function Faqs() {
                 <h2 className="text-center wow fadeInDown" data-wow-delay="0.4s">Frequently Asked Questions (FAQs)</h2>
             </div>
 
-            <div className="accordion">
+            <Accordion>
                 {faqList.map(faq => {
-                    return <Faq faq={faq} key={faq.question}/>
+                    return <Faq faq={faq} key={faq.question} />
                 })}
-            </div>
+            </Accordion>
         </div>
     );
 };

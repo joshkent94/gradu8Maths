@@ -110,6 +110,11 @@ label:focus,
   margin: 0 !important;
 }
 
+.card {
+  background-color: rgba(90, 90, 90, 0.965);
+  overflow: hidden;
+}
+
 /* keyframe stuff */
 @-webkit-keyframes fadeIn {
   from {

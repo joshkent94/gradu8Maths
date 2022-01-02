@@ -1,26 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Accordion } from 'react-bootstrap';
 
-export default function Faq(props) {
-    const {faq} = props;
-
-    const handleClick = e => {
-        const button = e.target;
-        button.classList.toggle('active-faq');
-        const answer = document.getElementById(faq.answer);
-        answer.classList.toggle('show');
-        const arrow = document.getElementById(`arrow-${faq.question}`);
-        arrow.classList.toggle('rotate');
-    };
-
+export default function Faq({ faq }) {
     return (
-        <div className="card faqCard wow fadeIn" data-wow-delay="0.4s">
-            <button className="card-header btn faqBtn" type="button" name={faq.question} onClick={handleClick}>
+        <Accordion.Item eventKey={faq.question} className="card faqCard wow fadeIn" data-wow-delay="0.4s">
+            <Accordion.Header>
                 <FontAwesomeIcon id={`arrow-${faq.question}`} icon='angle-right' className='dropdown-arrow' />
                 {faq.question}
-            </button>
-            <div id={faq.answer} className="card-body" onClick={handleClick}>
+            </Accordion.Header>
+            <Accordion.Body>
                 {faq.answer}
-            </div>
-        </div>
+            </Accordion.Body>
+        </Accordion.Item>
     );
 };
