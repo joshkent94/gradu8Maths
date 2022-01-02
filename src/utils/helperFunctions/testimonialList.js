@@ -16,7 +16,7 @@ export const testimonialList = [
         reviewer: "Banu Patil"
     },
     {
-        review: "Gradu8maths is a fantastic tutorial path where learning is fun; what seems difficult becomes easy and achievable. Andy designs an individual plan of learning to get results. We enjoyed dealing with Andy, who we found to be a professional and dedicated person. Under Andy's tutelage my son achieved a grade 9 GCSE, A in GCSE statistics and A* in maths and further maths, securing a place at Durham University to study maths.",
+        review: "Under Andy's tutelage my son achieved a grade 9 GCSE, A in GCSE statistics and A* in maths and further maths, securing a place at Durham University to study maths.",
         reviewer: "Helen Gavin"
     },
     {
