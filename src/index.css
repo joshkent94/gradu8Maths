@@ -54,6 +54,7 @@ h1 {
 
 h2 {
   font-weight: 400;
+  margin: 0;
 }
 
 h5 {
@@ -226,6 +227,16 @@ label:focus,
   }
 }
 
+@media (max-width: 1200px) {
+  .about-text-content {
+    margin: 0;
+  }
+
+  #profilePhotoContainer {
+    margin-right: 2rem;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-brand {
     margin-left: 0;
@@ -234,10 +245,15 @@ label:focus,
   #profilePhotoContainer {
     padding: 0 10% 5% !important;
     width: 100%;
+    margin: 0;
   }
 
-  #about-upper {
+  .about-content {
     flex-direction: column;
+  }
+
+  .about-text-content {
+    margin: 0;
   }
 
   #additional-recommendations {

@@ -12,7 +12,7 @@ export default function Navigation() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link className="underline" href="#aboutMe" title="About me">About</Nav.Link>
+                            <Nav.Link className="underline" href="#about" title="About me">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link className="underline" href="#testimonials" title="Testimonials">Testimonials</Nav.Link>
@@ -24,7 +24,7 @@ export default function Navigation() {
                             <Nav.Link className="underline" href="#recommendations" title="Recommendations">Recommendations</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="underline" href="#faqs" title="Frequently Asked Questions">FAQ</Nav.Link>
+                            <Nav.Link className="underline" href="#faqs" title="Frequently Asked Questions">FAQs</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link className="underline" href="#contact" title="Contact">Contact</Nav.Link>
