@@ -280,6 +280,14 @@ label:focus,
     padding: 3rem 1rem;
   }
 
+  .video-responsive {
+    padding-bottom: 80%;
+  }
+
+  .video-responsive iframe {
+    padding: 3rem 1rem;
+  }
+
   #faq {
     padding: 10% 5% !important;
   }
@@ -307,5 +315,15 @@ label:focus,
 
   #copyright {
     padding: 0% 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-responsive {
+    padding-bottom: 100%;
+  }
+
+  .video-responsive iframe {
+    padding: 3rem 0;
   }
 }
