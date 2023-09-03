@@ -1,4 +1,8 @@
-export default function EmbeddedVideo({ src }) {
+type EmbeddedVideoProps = {
+    src: string
+}
+
+const EmbeddedVideo = ({ src }: EmbeddedVideoProps) => {
     return (
         <div className="video-responsive wow fadeIn" data-wow-delay="0.4s">
             <iframe
@@ -10,5 +14,7 @@ export default function EmbeddedVideo({ src }) {
                 title="Cambridge Acceptance Discussion with Ilya"
             />
         </div>
-    );
-};
+    )
+}
+
+export default EmbeddedVideo

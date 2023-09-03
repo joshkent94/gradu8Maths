@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "module": "Node16",
+        "target": "ES2022",
+        "moduleResolution": "node16",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false,
+        "baseUrl": "."
+    },
+    "include": ["./**/*.ts", "./**/*.tsx", "./src/global.d.ts"],
+    "exclude": ["node_modules"]
+}

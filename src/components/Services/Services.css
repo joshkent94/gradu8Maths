@@ -1,13 +1,13 @@
 #services {
-  background-color: rgba(86, 80, 80, 0.8);
-  color: whitesmoke;
-  padding: 3rem 0;
-  background-image: url("/src/assets/services.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-color: rgba(86, 80, 80, 0.8);
+    color: whitesmoke;
+    padding: 3rem 0;
+    background-image: url('/src/assets/services.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sine-wave {
-  width: 90px;
+    width: 90px;
 }
