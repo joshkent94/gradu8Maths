@@ -10,7 +10,7 @@ import Faqs from 'src/components/faqs/faqs'
 import Contact from 'src/components/contact/contact'
 import Footer from 'src/components/footer/footer'
 import 'animate.css'
-import './index.css'
+import 'src/styles/globals.css'
 
 const App: FC = () => {
     // initialise wow.js

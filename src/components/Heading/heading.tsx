@@ -7,7 +7,7 @@ const Heading: FC = () => {
         <header>
             <Navigation />
             <div className="view wow fadeIn background">
-                <div className="align-items-center">
+                <div className="flex h-full">
                     <div className="container">
                         <div className="row g-0">
                             <div className="col-md-12 mb-4 text-center wow fadeInUp centerTitle">
