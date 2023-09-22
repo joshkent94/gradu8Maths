@@ -10,8 +10,19 @@
         "allowSyntheticDefaultImports": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": false,
-        "baseUrl": "."
+        "paths": {
+            "@assets/*": ["src/assets/*"],
+            "@styles/*": ["src/styles/*"],
+            "@components/*": ["src/components/*"],
+            "@utils/*": ["src/utils/*"]
+        },
+        "baseUrl": "./"
     },
     "include": ["./**/*.ts", "./**/*.tsx", "./src/global.d.ts"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }

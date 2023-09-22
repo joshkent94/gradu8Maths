@@ -1,4 +1,4 @@
-import logo from 'src/assets/gradu8_maths.png'
+import logo from '@assets/gradu8_maths.png'
 import { FC } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 

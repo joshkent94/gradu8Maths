@@ -1,4 +1,4 @@
-import sine_wave from 'src/assets/sine_wave.png'
+import sine_wave from '@assets/sine_wave.png'
 import { FC } from 'react'
 import HomeIcon from '@mui/icons-material/Home'
 import AddIcon from '@mui/icons-material/Add'

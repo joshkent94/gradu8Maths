@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import selfie from 'src/assets/doncaster_maths_tutor.jpg'
+import selfie from '@assets/doncaster_maths_tutor.jpg'
 import './about.css'
 
 const About: FC = () => {

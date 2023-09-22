@@ -1,33 +1,25 @@
-import { useState, FC } from 'react'
+import { FC } from 'react'
+import emailjs from '@emailjs/browser'
 import './contact.css'
 
 const Contact: FC = () => {
-    const [name, setName] = useState('')
-    const [number, setNumber] = useState('')
-    const [message, setMessage] = useState('')
-
-    const handleNameChange = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault()
-        setName(e.target.value)
-    }
-
-    const handleNumberChange = (e) => {
-        e.preventDefault()
-        setNumber(e.target.value)
-    }
-
-    const handleMessageChange = (e) => {
-        e.preventDefault()
-        setMessage(e.target.value)
-    }
-
-    const handleFormSubmit = (e) => {
-        e.preventDefault()
-        const subject = `${name} - ${number}`
-        const body = `Hi Andy,%0D%0A%0D%0A${message}%0D%0A%0D%0AKind regards,%0D%0A${name}%0D%0A%0D%0A`
-        window.open(
-            `mailto:gradu8maths@gmail.com?subject=${subject}&body=${body}`
-        )
+        emailjs
+            .sendForm(
+                'service_uqdslb8',
+                'template_f6uou5i',
+                e.target,
+                process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log(result.text)
+                },
+                (error) => {
+                    console.log(error.text)
+                }
+            )
     }
 
     return (
@@ -49,7 +41,6 @@ const Contact: FC = () => {
                         data-wow-delay="0.3s"
                         id="nameInput"
                         placeholder="Name"
-                        onChange={handleNameChange}
                         required
                     />
                 </div>
@@ -61,7 +52,6 @@ const Contact: FC = () => {
                         data-wow-delay="0.3s"
                         id="subjectInput"
                         placeholder="Phone Number"
-                        onChange={handleNumberChange}
                         required
                     />
                 </div>
@@ -72,7 +62,6 @@ const Contact: FC = () => {
                         data-wow-delay="0.3s"
                         id="messageInput"
                         placeholder="Message"
-                        onChange={handleMessageChange}
                         required
                     ></textarea>
                 </div>

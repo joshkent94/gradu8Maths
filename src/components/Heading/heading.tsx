@@ -1,4 +1,4 @@
-import Navigation from 'src/components/heading/navigation'
+import Navigation from '@components/heading/navigation'
 import { FC } from 'react'
 import './heading.css'
 

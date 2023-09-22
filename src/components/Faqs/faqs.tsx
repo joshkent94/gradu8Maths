@@ -1,7 +1,7 @@
 import { Accordion } from 'react-bootstrap'
-import { faqList } from 'src/utils/faqList'
-import EmbeddedVideo from 'src/components/faqs/embedded-video'
-import Faq from 'src/components/faqs/faq'
+import { faqList } from '@utils/faqList'
+import EmbeddedVideo from '@components/faqs/embedded-video'
+import Faq from '@components/faqs/faq'
 import { FC } from 'react'
 import './faqs.css'
 

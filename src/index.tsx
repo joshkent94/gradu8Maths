@@ -1,16 +1,16 @@
 import { FC } from 'react'
 import { createRoot } from 'react-dom/client'
 import WOW from 'wow.js'
-import Heading from 'src/components/heading/heading'
-import About from 'src/components/about/about'
-import Testimonials from 'src/components/testimonials/testimonials'
-import Services from 'src/components/services/services'
-import Recommendations from 'src/components/recommendations/recommendations'
-import Faqs from 'src/components/faqs/faqs'
-import Contact from 'src/components/contact/contact'
-import Footer from 'src/components/footer/footer'
+import Heading from '@components/heading/heading'
+import About from '@components/about/about'
+import Testimonials from '@components/testimonials/testimonials'
+import Services from '@components/services/services'
+import Recommendations from '@components/recommendations/recommendations'
+import Faqs from '@components/faqs/faqs'
+import Contact from '@components/contact/contact'
+import Footer from '@components/footer/footer'
 import 'animate.css'
-import 'src/styles/globals.css'
+import '@styles/globals.css'
 
 const App: FC = () => {
     // initialise wow.js
@@ -33,8 +33,7 @@ const App: FC = () => {
 }
 
 const init = () => {
-    const appContainer = document.createElement('div')
-    document.body.appendChild(appContainer)
+    const appContainer = document.getElementById('root')
     const root = createRoot(appContainer)
     root.render(<App />)
 }

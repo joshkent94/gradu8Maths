@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
-import { testimonialList } from 'src/utils/testimonialList'
+import { testimonialList } from '@utils/testimonialList'
 import './testimonials.css'
 
 const Testimonials: FC = () => {
