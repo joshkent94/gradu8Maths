@@ -1,30 +1,18 @@
 import { FC } from 'react'
 import selfie from '@assets/doncaster_maths_tutor.jpg'
-import './about.css'
 
 const About: FC = () => {
     return (
-        <div id="about">
-            <h2 className="col-md-12 section-heading text-center wow fadeInUp">
-                About
-            </h2>
-            <div className="about-content">
-                <div
-                    className="col-lg-6 my-auto text-center wow fadeIn"
-                    data-wow-delay="0.4s"
-                    id="profilePhotoContainer"
-                >
+        <div>
+            <h2 className="wow fadeInUp">About</h2>
+            <div>
+                <div className="wow fadeIn" data-wow-delay="0.4s">
                     <img
-                        className="img-fluid w-100"
                         src={selfie}
                         alt="A level and GCSE maths tutor in Doncaster"
-                        id="profilePhoto"
                     />
                 </div>
-                <div
-                    className="wow fadeIn about-text-content"
-                    data-wow-delay="0.4s"
-                >
+                <div className="wow fadeIn" data-wow-delay="0.4s">
                     <p>
                         Hi, I'm Andy Kent. Whilst I have had a successful career
                         as a senior manager in law enforcement I always
@@ -39,7 +27,7 @@ const About: FC = () => {
                         point I decided to become a full time maths tutor; a job
                         I love.
                     </p>
-                    <p className="remove-margin">
+                    <p>
                         I am extremely enthusiastic about maths and have found
                         that this can be infectious and inspire others. In fact,
                         on numerous occasions, I have completely changed a

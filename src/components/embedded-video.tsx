@@ -4,7 +4,7 @@ type EmbeddedVideoProps = {
 
 const EmbeddedVideo = ({ src }: EmbeddedVideoProps) => {
     return (
-        <div className="video-responsive wow fadeIn" data-wow-delay="0.4s">
+        <div className="wow fadeIn" data-wow-delay="0.4s">
             <iframe
                 width="852"
                 height="480"

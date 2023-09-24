@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "dev": "webpack serve --mode=development --config webpack.config.ts",
+        "dev": "rm -rf ./dist && webpack serve --mode=development --config webpack.config.ts",
         "build": "rm -rf ./build && webpack --mode=production --config webpack.config.ts",
         "lint": "prettier --write --log-level silent . && eslint . --ext .js,.jsx,.ts,.tsx"
     },
@@ -24,7 +24,6 @@
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.8.1",
         "dotenv": "^16.3.1",
-        "file-loader": "^6.2.0",
         "ghost-progress-webpack-plugin": "^0.1.0",
         "html-webpack-plugin": "^5.5.3",
         "postcss": "^8.4.29",
@@ -70,6 +69,7 @@
         },
         "ignorePatterns": [
             "node_modules/",
+            "dist/",
             "build/"
         ]
     },

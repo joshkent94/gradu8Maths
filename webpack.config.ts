@@ -4,7 +4,6 @@ import HtmlPlugin from 'html-webpack-plugin'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 import CopyPlugin from 'copy-webpack-plugin'
 import { merge } from 'webpack-merge'
 import { GhostProgressPlugin } from 'ghost-progress-webpack-plugin'
@@ -14,6 +13,9 @@ import 'dotenv/config'
 type Mode = 'development' | 'production' | 'none'
 
 const devServer: DevServerConfiguration = {
+    static: {
+        directory: path.join(__dirname, 'dist'),
+    },
     port: 3000,
     client: {
         logging: 'error',
@@ -22,6 +24,9 @@ const devServer: DevServerConfiguration = {
         app: {
             name: 'arc',
         },
+    },
+    devMiddleware: {
+        writeToDisk: true,
     },
 }
 
@@ -59,22 +64,14 @@ const commonConfig = (mode: Mode): Configuration => ({
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                    },
-                ],
-            },
-            {
-                type: 'assets/resource',
-                test: /\.(woff|woff2|tff|eot|svg)$/,
+                type: 'asset',
+                test: /\.(woff|woff2|tff|eot|svg|png|jpe?g|gif)$/i,
             },
         ],
     },
     plugins: [
         new HtmlPlugin({
-            template: './src/index.html',
+            template: './public/index.html',
         }),
         new GhostProgressPlugin(),
         new DefinePlugin({
@@ -100,28 +97,43 @@ const commonConfig = (mode: Mode): Configuration => ({
 })
 
 const devConfig = (): Configuration => ({
-    devtool: 'cheap-module-source-map',
     plugins: [
         new DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development'),
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve('public/favicon.ico'),
+                    to: path.resolve('dist/favicon.ico'),
+                },
+                {
+                    from: path.resolve('public/manifest.json'),
+                    to: path.resolve('dist/manifest.json'),
+                },
+            ],
+        }),
     ],
+    output: {
+        path: path.join(__dirname, 'dist'),
+    },
     devServer,
 })
 
 const prodConfig = (): Configuration => ({
     plugins: [
-        new CleanWebpackPlugin({
-            cleanStaleWebpackAssets: false,
-        }),
         new DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production'),
         }),
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve('public'),
-                    to: path.resolve('build'),
+                    from: path.resolve('public/favicon.ico'),
+                    to: path.resolve('build/favicon.ico'),
+                },
+                {
+                    from: path.resolve('public/manifest.json'),
+                    to: path.resolve('build/manifest.json'),
                 },
             ],
         }),

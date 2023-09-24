@@ -1,29 +1,25 @@
-import sine_wave from '@assets/sine_wave.png'
 import { FC } from 'react'
+import sine_wave from '@assets/sine_wave.png'
 import HomeIcon from '@mui/icons-material/Home'
 import AddIcon from '@mui/icons-material/Add'
-import './services.css'
 
 const Services: FC = () => {
     return (
-        <div id="services">
-            <div className="col-md-12 section-heading">
-                <h2
-                    className="text-center wow fadeInDown"
-                    data-wow-delay="0.4s"
-                >
+        <div>
+            <div>
+                <h2 className="wow fadeInDown" data-wow-delay="0.4s">
                     Services
                 </h2>
             </div>
-            <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
-                <div className="mx-5 my-3 p-5 card">
-                    <div className="row">
-                        <div className="col-sm-3 text-center mx-auto my-auto py-5">
+            <div className="wow fadeInUp" data-wow-delay="0.3s">
+                <div>
+                    <div>
+                        <div>
                             <HomeIcon fontSize="large" />
                         </div>
-                        <div className="col-sm-9 my-auto">
+                        <div>
                             <h4>Home Tutoring</h4>
-                            <p className="remove-margin">
+                            <p>
                                 Studies have shown that children learn best when
                                 being taught one-to-one and in comfortable and
                                 familiar surroundings. For this reason, if you
@@ -35,17 +31,13 @@ const Services: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
-                <div className="mx-5 my-3 p-5 card">
-                    <div className="row">
-                        <div className="col-sm-3 text-center mx-auto my-auto py-5">
-                            <img
-                                className="sine-wave"
-                                src={sine_wave}
-                                alt="Sine wave"
-                            />
+            <div className="wow fadeInUp" data-wow-delay="0.3s">
+                <div>
+                    <div>
+                        <div>
+                            <img src={sine_wave} alt="Sine wave" />
                         </div>
-                        <div className="col-sm-9 my-auto">
+                        <div>
                             <h4>Flexible To Suit Your Needs</h4>
                             <p>I tutor all ages in preparation for:</p>
                             <ul>
@@ -60,7 +52,7 @@ const Services: FC = () => {
                                     reduced university offers)
                                 </li>
                             </ul>
-                            <p className="remove-margin">
+                            <p>
                                 I also offer bespoke tuition for other less
                                 common exams e.g. Nursing exams, MAT (Oxford
                                 entrance exam), STEP (Cambridge entrance exam)
@@ -70,13 +62,13 @@ const Services: FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-12 wow fadeInUp" data-wow-delay="0.3s">
-                <div className="mx-5 my-3 p-5 card">
-                    <div className="row">
-                        <div className="col-sm-3 text-center mx-auto my-auto py-5">
+            <div className="wow fadeInUp" data-wow-delay="0.3s">
+                <div>
+                    <div>
+                        <div>
                             <AddIcon fontSize="large" />
                         </div>
-                        <div className="col-sm-9 my-auto">
+                        <div>
                             <h4>And More</h4>
                             <p>
                                 A lesson is typically one-hour in duration
@@ -84,7 +76,7 @@ const Services: FC = () => {
                                 prefer a two-hour lesson given the complexity of
                                 some topics.
                             </p>
-                            <p className="remove-margin">
+                            <p>
                                 At Easter and just prior to the exams I offer
                                 three-hour revision sessions. During these we
                                 target areas that are in need of development and

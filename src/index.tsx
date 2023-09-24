@@ -1,14 +1,14 @@
 import { FC } from 'react'
 import { createRoot } from 'react-dom/client'
 import WOW from 'wow.js'
-import Heading from '@components/heading/heading'
-import About from '@components/about/about'
-import Testimonials from '@components/testimonials/testimonials'
-import Services from '@components/services/services'
-import Recommendations from '@components/recommendations/recommendations'
-import Faqs from '@components/faqs/faqs'
-import Contact from '@components/contact/contact'
-import Footer from '@components/footer/footer'
+import Heading from '@components/heading'
+import About from '@components/about'
+import Testimonials from '@components/testimonials'
+import Services from '@components/services'
+import Recommendations from '@components/recommendations'
+import Faqs from '@components/faqs'
+import Contact from '@components/contact'
+import Footer from '@components/footer'
 import 'animate.css'
 import '@styles/globals.css'
 
@@ -19,7 +19,7 @@ const App: FC = () => {
     return (
         <>
             <Heading />
-            <main className="container-fluid padding">
+            <main>
                 <About />
                 <Testimonials />
                 <Services />
