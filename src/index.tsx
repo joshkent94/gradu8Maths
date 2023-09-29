@@ -1,16 +1,30 @@
 import { FC } from 'react'
 import { createRoot } from 'react-dom/client'
+import {
+    createBrowserRouter,
+    createRoutesFromElements,
+    Route,
+    RouterProvider,
+} from 'react-router-dom'
 import WOW from 'wow.js'
-import Heading from '@components/heading'
-import About from '@components/about'
-import Testimonials from '@components/testimonials'
-import Services from '@components/services'
-import Recommendations from '@components/recommendations'
-import Faqs from '@components/faqs'
-import Contact from '@components/contact'
-import Footer from '@components/footer'
+import Layout from '@components/layout'
+import Home from '@pages/home'
+import RequestATutor from '@pages/request-a-tutor'
+import BecomeATutor from '@pages/become-a-tutor'
 import 'animate.css'
 import '@styles/globals.css'
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <>
+            <Route element={<Layout />}>
+                <Route path="/" element={<Home />} />
+                <Route path="/request-a-tutor" element={<RequestATutor />} />
+                <Route path="/become-a-tutor" element={<BecomeATutor />} />
+            </Route>
+        </>
+    )
+)
 
 const App: FC = () => {
     // initialise wow.js
@@ -18,24 +32,12 @@ const App: FC = () => {
 
     return (
         <>
-            <Heading />
-            <main>
-                <About />
-                <Testimonials />
-                <Services />
-                <Recommendations />
-                <Faqs />
-                <Contact />
-            </main>
-            <Footer />
+            <div className="flex flex-col min-h-screen">
+                <RouterProvider router={router} />
+            </div>
         </>
     )
 }
 
-const init = () => {
-    const appContainer = document.getElementById('root')
-    const root = createRoot(appContainer)
-    root.render(<App />)
-}
-
-init()
+const root = createRoot(document.getElementById('root'))
+root.render(<App />)

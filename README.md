@@ -1,20 +1,15 @@
-# Gradu8 Maths
+# Gradu8 Tutors
 
-> Website for Gradu8 Maths tuition.
+> Website for Gradu8 Tutors.
 
 ## Contents
 
 -   [General Info](#general-info)
--   [Screenshot](#screenshot)
 -   [Contact](#contact)
 
 ## General Info
 
-A website for Gradu8 Maths tuition. Visitors to the site can see relevant information, write reviews and contact the tutor.
-
-## Screenshot
-
-![Screenshot of website](./src/assets/gradu8_maths_tutor.png)
+A website for Gradu8 Tutors.
 
 ## Contact
 

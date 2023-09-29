@@ -6,10 +6,15 @@
 
 @layer base {
     html,
-    body {
+    body,
+    #root {
         min-height: 100vh;
-        font-family: 'Montserrat', sans-serif;
-        scroll-behavior: smooth;
+        overscroll-behavior: none;
+    }
+
+    * {
+        font-family: 'Montserrat', sans-serif !important;
+        color: black !important;
     }
 }
 

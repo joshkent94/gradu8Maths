@@ -5,9 +5,9 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 
 const Footer: FC = () => {
     return (
-        <footer>
-            <div>
-                <div className="wow fadeIn" data-wow-delay="0.4s">
+        <footer className="w-screen py-6">
+            <div className="flex justify-around">
+                <div>
                     <EmailIcon fontSize="large" />
                     <a
                         href="mailto:gradu8maths@gmail.com"
@@ -16,7 +16,7 @@ const Footer: FC = () => {
                         <p>gradu8maths@gmail.com</p>
                     </a>
                 </div>
-                <div className="wow fadeIn" data-wow-delay="0.4s">
+                <div>
                     <PhoneIcon fontSize="large" />
                     <a
                         href="tel:07432263120"
@@ -25,7 +25,7 @@ const Footer: FC = () => {
                         <p>07432 263120</p>
                     </a>
                 </div>
-                <div className="wow fadeIn" data-wow-delay="0.4s">
+                <div>
                     <FacebookIcon fontSize="large" />
                     <a
                         href="https://www.facebook.com/Gradu8maths/"
@@ -37,9 +37,7 @@ const Footer: FC = () => {
                     </a>
                 </div>
             </div>
-            <div>
-                <p>Gradu8 Maths &copy; 2022</p>
-            </div>
+                <p className='w-full text-center mt-4'>&copy; Gradu8 Tutors 2023</p>
         </footer>
     )
 }

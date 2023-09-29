@@ -1,9 +1,9 @@
 {
-    "short_name": "Gradu8 Maths",
-    "name": "Gradu8 Maths",
+    "short_name": "Gradu8 Tutors",
+    "name": "Gradu8 Tutors",
     "icons": [
         {
-            "src": "./assets/favicon.ico",
+            "src": "favicon.ico",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
         }

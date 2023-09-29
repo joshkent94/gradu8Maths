@@ -1,17 +1,10 @@
 import { FC } from 'react'
-import selfie from '@assets/doncaster_maths_tutor.jpg'
 
 const About: FC = () => {
     return (
         <div>
             <h2 className="wow fadeInUp">About</h2>
             <div>
-                <div className="wow fadeIn" data-wow-delay="0.4s">
-                    <img
-                        src={selfie}
-                        alt="A level and GCSE maths tutor in Doncaster"
-                    />
-                </div>
                 <div className="wow fadeIn" data-wow-delay="0.4s">
                     <p>
                         Hi, I'm Andy Kent. Whilst I have had a successful career
